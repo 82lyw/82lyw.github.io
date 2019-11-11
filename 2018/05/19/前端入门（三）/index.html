@@ -120,7 +120,7 @@
 
 
 
-  <title>Hello World | LYW</title>
+  <title>前端入门（三） | LYW</title>
   
 
 
@@ -257,7 +257,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/24/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/19/前端入门（三）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Liu Yiwen">
@@ -274,7 +274,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">前端入门（三）</h1>
         
 
         <div class="post-meta">
@@ -286,7 +286,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-24T20:38:02+08:00">2018-02-24</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-19T09:55:43+08:00">2018-05-19</time>
             
 
             
@@ -322,15 +322,19 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h2 id="sass"><a href="#sass" class="headerlink" title="sass"></a>sass</h2><h3 id="“CSS-预处理器”，让-CSS-像其它程序语言一样可以做一些预定的处理，为-CSS-增加一些编程的特性。"><a href="#“CSS-预处理器”，让-CSS-像其它程序语言一样可以做一些预定的处理，为-CSS-增加一些编程的特性。" class="headerlink" title="“CSS 预处理器”，让 CSS 像其它程序语言一样可以做一些预定的处理，为 CSS 增加一些编程的特性。"></a>“CSS 预处理器”，让 CSS 像其它程序语言一样可以做一些预定的处理，为 CSS 增加一些编程的特性。</h3><h3 id="！default-设置默认值，而覆盖则是再其之前再次声明该变量"><a href="#！default-设置默认值，而覆盖则是再其之前再次声明该变量" class="headerlink" title="！default 设置默认值，而覆盖则是再其之前再次声明该变量"></a>！default 设置默认值，而覆盖则是再其之前再次声明该变量</h3><p>使用：<br>例如把 padding 的值从 2px 改成 5px</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ingStylePadding: 5px;</span><br><span class="line"></span><br><span class="line">//导入imgstyle.scss</span><br><span class="line">@import &apos;imgstyle&apos; ;</span><br></pre></td></tr></table></figure>
+<p>编译成 css 后</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">img-border &#123;</span><br><span class="line">border： 1px solid  #ccc ;</span><br><span class="line">padding: 5px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这种情况使用默认值，可以让我们在不对.scss 源文件进行修改，而对我们要修改的地方进行了修改，同时不会产生重复的代码</p>
+<h3 id="mixin-可以实现大段样式的重用"><a href="#mixin-可以实现大段样式的重用" class="headerlink" title="@mixin 可以实现大段样式的重用"></a>@mixin 可以实现大段样式的重用</h3><h3 id="可以对选择器进行嵌套使用"><a href="#可以对选择器进行嵌套使用" class="headerlink" title="可以对选择器进行嵌套使用"></a>可以对选择器进行嵌套使用</h3><h3 id="sass-的逻辑：如-if、-while、-each、-for"><a href="#sass-的逻辑：如-if、-while、-each、-for" class="headerlink" title="sass 的逻辑：如@if、@while、@each、@for"></a>sass 的逻辑：如@if、@while、@each、@for</h3><h2 id="移动端的适配"><a href="#移动端的适配" class="headerlink" title="移动端的适配"></a>移动端的适配</h2><p>###</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">visual viewport 可见视口 屏幕宽度</span><br><span class="line">layout viewport 布局视口 DOM宽度</span><br><span class="line">ideal viewport 理想适口：使布局视口就是可见视口</span><br><span class="line">设备宽度(visual viewport)与DOM宽度(layout viewport), scale的关系为：</span><br><span class="line"></span><br><span class="line">（visual viewport）= （layout viewport）* scale</span><br><span class="line">获取屏幕宽度(visual viewport)的尺寸：window. innerWidth/Height。</span><br><span class="line">获取DOM宽度(layout viewport)的尺寸：document. documentElement. clientWidth/Height。</span><br></pre></td></tr></table></figure>
+<p>eg.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>设置理想视口：把默认的<code>layout viewport</code>的宽度设为移动设备的屏幕宽度，得到理想视口(<code>ideal viewport</code>)<br><code>width=device-width</code> 这句代码可以把布局视口设置成为浏览器（屏幕）的宽度<br><code>user-scalable=no</code> 禁止用户缩放<br><code>initial-scale=1</code> 的意思是初始缩放的比例是 1,起到了和<code>width=device-width</code>同样的效果<br><code>maximum-scale=1.0, minimum-scale=1.0</code>最大最小的缩放级别</p>
+<h3 id="媒体查询-media"><a href="#媒体查询-media" class="headerlink" title="媒体查询@media"></a>媒体查询<code>@media</code></h3><p><code>min-width、max-width</code>对应的属性值就是响应式设计中的断点值<br>来解决自适问题</p>
+<h3 id="设配-rem"><a href="#设配-rem" class="headerlink" title="设配 rem"></a>设配 rem</h3><p>适配原理：将<code>px</code>替换成<code>rem</code>,动态修改<code>html</code>的<code>font-size</code><br>1 rem = 浏览器默认的字体大小</p>
+<h3 id="Flexible-布局"><a href="#Flexible-布局" class="headerlink" title="Flexible 布局"></a>Flexible 布局</h3><p>相对单位 rem 基准值公式：<br><code>rem=document.documentElement.clientWidth*dpr/10</code><br>将视觉稿分成 100 份，每份被称为一个单位 a<br><code>1rem</code>被认为<code>10a</code><br>Flexible 会将实际视口宽度除以 10，并将这个值设置为根元素 html 的<code>font-size</code>值。<br>由此可以推出：对于采用标准<code>iPhone 6</code>的<code>750×1334</code>视觉稿来说<br><code>1a = 7.5px 1rem = 75px</code><br>基于这个计算结果，我们就能将 1:1 标注稿的 px 数值除以 75 转换成 rem 数值，再套用到 CSS 中。</p>
 
       
     </div>
@@ -355,15 +359,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/05/12/前端入门（二）/" rel="next" title="前端入门（二）">
+                <i class="fa fa-chevron-left"></i> 前端入门（二）
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/05/前端入门（一）/" rel="prev" title="前端入门（一）">
-                前端入门（一） <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -504,7 +508,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#sass"><span class="nav-number">1.</span> <span class="nav-text">sass</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#“CSS-预处理器”，让-CSS-像其它程序语言一样可以做一些预定的处理，为-CSS-增加一些编程的特性。"><span class="nav-number">1.1.</span> <span class="nav-text">“CSS 预处理器”，让 CSS 像其它程序语言一样可以做一些预定的处理，为 CSS 增加一些编程的特性。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#！default-设置默认值，而覆盖则是再其之前再次声明该变量"><span class="nav-number">1.2.</span> <span class="nav-text">！default 设置默认值，而覆盖则是再其之前再次声明该变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mixin-可以实现大段样式的重用"><span class="nav-number">1.3.</span> <span class="nav-text">@mixin 可以实现大段样式的重用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可以对选择器进行嵌套使用"><span class="nav-number">1.4.</span> <span class="nav-text">可以对选择器进行嵌套使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sass-的逻辑：如-if、-while、-each、-for"><span class="nav-number">1.5.</span> <span class="nav-text">sass 的逻辑：如@if、@while、@each、@for</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#移动端的适配"><span class="nav-number">2.</span> <span class="nav-text">移动端的适配</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#媒体查询-media"><span class="nav-number">2.1.</span> <span class="nav-text">媒体查询@media</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设配-rem"><span class="nav-number">2.2.</span> <span class="nav-text">设配 rem</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Flexible-布局"><span class="nav-number">2.3.</span> <span class="nav-text">Flexible 布局</span></a></li></ol></li></ol></div>
             
 
           </div>
